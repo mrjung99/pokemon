@@ -4,8 +4,8 @@ A simple React app that lets you search and view Pokémon characters using the [
 
 ## 🖼️ Preview
 
-![App Screenshot](<./Pokemon/src/assets/Screenshot%20(21).png>)
-![App Screenshot](<./Pokemon/src/assets/Screenshot%20(22).png>)
+![App Screenshot](<./src/assets/Screenshot (21).png>)
+![App Screenshot](<./src/assets/Screenshot (22).png>)
 
 ## 🚀 Features
 
