@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+p {
+  margin: 0;
+  /* background-color: rgb(210, 222, 255); */
+}
+
+body {
+  background-color: rgb(217, 221, 232);
+}
