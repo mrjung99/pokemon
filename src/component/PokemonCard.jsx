@@ -28,7 +28,7 @@ const PokemonCard = ({ data }) => {
         </p>
       </div>
 
-      <div className="flex justify-between w-full my-4 text-[12px] font-medium px-3">
+      <div className="flex justify-between gap-3 w-full my-4 text-[12px] font-medium px-3">
         <p>
           Height: <span className="font-thin">{data.height}</span>
         </p>

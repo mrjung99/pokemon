@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import PokemonCard from "./PokemonCard";
 
 const Pokemon = () => {
-  const [pokemonCharactor, setPokemonCharactor] = useState("");
+  const [pokemonCharacters, setPokemonCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
 
-  const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
+  const API = "https://pokeapi.co/api/v2/pokemon?limit=124";
 
   const fetchPokemonData = async () => {
     try {
@@ -21,7 +21,7 @@ const Pokemon = () => {
       });
 
       const allPokemonRes = await Promise.all(allPokemonData);
-      setPokemonCharactor(allPokemonRes);
+      setPokemonCharacters(allPokemonRes);
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -34,7 +34,7 @@ const Pokemon = () => {
     fetchPokemonData();
   }, []);
 
-  const searchData = pokemonCharactor.filter((charcters) =>
+  const searchData = pokemonCharacters.filter((charcters) =>
     charcters.name.toLowerCase().includes(search.toLocaleLowerCase())
   );
 
